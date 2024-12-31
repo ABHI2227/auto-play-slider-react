@@ -1,0 +1,32 @@
+/* Center the entire slider on the page */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-color: #f4f4f4; /* Optional background color */
+}
+
+/* Center the individual slides */
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the images */
+.slider-image {
+  width: 80%; /* Adjust the size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-image:hover {
+  transform: scale(1.05); /* Smooth zoom on hover */
+}
